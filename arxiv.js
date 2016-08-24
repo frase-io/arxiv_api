@@ -18,14 +18,14 @@
 
 /**
  * Searches arXiv for papers/documents that match the supplied parameters
+ * @param {string} all
  * @param {string} author
  * @param {string} title
  * @param {string} abstrct
  * @param {string} journal_ref
- * @param {string} all
  * @returns {Promise}
  */
-function arxiv_search(author, title, abstrct, journal_ref, all) {
+function arxiv_search({all, author, title, abstrct, journal_ref}) {
     baseUrl = "http://export.arxiv.org/api/query?search_query=";
     first = true;
     
@@ -59,7 +59,7 @@ function arxiv_search(author, title, abstrct, journal_ref, all) {
 	}
 	baseUrl += "all:" + all;
     }
-    
+
     var deferred = $.Deferred();
     $.ajax({
         url: baseUrl,
