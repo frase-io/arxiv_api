@@ -25,4 +25,4 @@ It returns a JQuery Promise that resolves to an array of JSON once "done". JSON 
 }
 ```
 
-For more information please see [example.html](example.html)
+For more information please see the [example](example.html)
