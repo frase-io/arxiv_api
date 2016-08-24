@@ -1,4 +1,4 @@
 # arXiv API
 A simple JavaScript API that can be used to query the arXiv HTTP API. Requires JQuery
 
-For more information please see [example.html!](example.html)
+For more information please see [example.html](example.html)
