@@ -26,8 +26,8 @@
  * @returns {Promise}
  */
 function arxiv_search({all, author, title, abstrct, journal_ref}) {
-    baseUrl = "http://export.arxiv.org/api/query?search_query=";
-    first = true;
+    var baseUrl = "http://export.arxiv.org/api/query?search_query=";
+    var first = true;
     
     if (author) {
 	if (!first) {
