@@ -3,7 +3,7 @@ A simple JavaScript API that can be used to query the arXiv HTTP API. Requires J
 
 the function:
 ```
-arxiv_search({all, author, title, abstrct, journal_ref}) 
+arxiv_search({all, author, title, abstract, journal_ref}) 
 ```
 
 takes one or more of the following optional string arguments. Each string will match against its respective field:
